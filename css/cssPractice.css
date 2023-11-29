@@ -1,0 +1,31 @@
+/* CSS Document */
+
+body {
+	background-color:rgba(26,26,26,1.00);
+	padding:100px;
+	margin:0;
+	font-family:"Gotham", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+
+.spooky {
+	background-color:rgba(0,0,0,1.00);
+	padding: 50px;
+}
+
+
+p {
+	color:rgba(68,14,207,1.00);
+	text-align: center;
+}
+
+
+a {
+	color:rgba(113,29,209,1.00);
+}
+
+h1 {
+	color:rgba(68,14,207,1.00);
+	background-color:rgba(42,32,77,1.00);
+	font-size:100vh;
+}
