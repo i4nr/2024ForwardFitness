@@ -13,7 +13,7 @@ font-family: 'Roboto Slab', serif;
   @import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100&display=swap');
 
 /* CSS RESET*/
-body, nav, header, main, footer, h1, div, img, ul, figure, figcaption {
+body, nav, header, main, footer, h1, div, img, ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -28,15 +28,10 @@ img {
 	max-width: 100%;
 	display: block;
 }
-
-/* Style rule for box sizing apllies to all elements */
-*{
-	
-box-sizing: border-box;
-
-}
 /*Style rules for header*/
 header {
+	postition: -webkit-sticky;
+	position: sticky;
 	top: 0;
 	background-color: #000;
 	height: 190px;
@@ -104,7 +99,7 @@ main {
 }
 
 .mobile {
-	display: none;
+	display: block;
 }
 	
 .tablet-desktop {
@@ -114,25 +109,6 @@ main {
 .action {
 	font-size: 1.35em;
 	color: #606;
-	font-weight: bold;
-}
-
-.frame {
-	position: relative;
-	max-width: 450px;
-	margin: 2% auto;
-}
-
-.pic-text {
-	position: absolute;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
-	color: #fff;
-	width: 100%;
-	padding: 20px;
-	text-align: center;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1.5em;
 	font-weight: bold;
 }
 
@@ -188,8 +164,7 @@ main {
 		clear: left;
 		border-top: 1px solid #000;
 		border-bottom: 1px solid #000;
-		background: linear-gradient(to right, #ccc, #fff);
-/*		background-color: #f2f2f2;*/
+		background-color: #f2f2f2;
 		padding: 1% 2%;
 	}
 
@@ -255,7 +230,7 @@ main {
 	}
 	
 	main h1 {
-		font-size: 1.8em;
+		font-size: 2em;
 	}
 	
 	#weights, #cardio, #training {
@@ -267,12 +242,6 @@ main {
 	#exercises {
 		clear: left;
 	}
-	
-	nav li a:hover {
-		color: #000;
-		background-color: #fff;
-	}
-	
 }/* Closing Desktop Viewport Media Query*/
 
 /*Large Screen Media Query*/
